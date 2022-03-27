@@ -1,0 +1,166 @@
+thinks.txt
+1. Перевести словарь в json +++++
+fixtures. (dumpdata/loaddata).
+1.2 Придумать как записывать дату в БД
+select * from table
+  where DATE_FORMAT(date,'%m%d%h%i') between '07312200' and '08312200'
+  'Oтвет':
+  Как создавать собственные django-adminкоманды
+  https://docs.djangoproject.com/en/4.0/howto/custom-management-commands/
+
+2. Загрузить json в БД
+a = ZodiakSing(name='Близнецы', code='gemini', description='Третий знак зодиака, планета Меркурий.', date_from='2000-05-22', date
+    ...: _to='2000-06-21', element='air')
+
+3. Выводить из БД в views +++++++++
+4. Потренить с sql
+5. Написать программу, которая переводит из dict in json 
+
+# from django.db import models
+
+
+# # Create your models here.
+
+# class Element(models.Model):
+#     name = models.CharField(max_length=255)
+#     code = models.CharField(max_length=45)  # Uniq
+#     description = models.TextField(blank=True)
+
+#     def __str__(self):
+#         return f'{self.name} - {self.description}'
+
+
+# class ZodiakSing(models.Model):
+#     name = models.CharField(max_length=255)  # Ok
+#     code = models.CharField(max_length=45)  # Uniq
+#     description = models.TextField(blank=True)
+#     element = models.ForeignKey(Element, on_delete=models.PROTECT)
+#     date_from = models.DateField()
+#     date_to = models.DateField()
+
+#     def __str__(self):
+#         return f'{self.name} - {self.description}'
+
+
+# ДЗ
+# 1. Доработать вьюхи для работы с моделями
+# 2. Сделать команду fill_db, которая заливает дефолтные значения гороскопа в БД + шаблоны
+
+[
+     {
+        'name': 'Овен',
+        'code': 'aries',
+        'desc': 'Первый знак зодиака, планета Марс.',
+        'date_from': '2000-03-21',
+        'date_to': '2000-04-20',
+        'element': 'fire',
+    },
+    {
+        'name': 'Телец',
+        'code': 'taurus',
+        'desc': 'Второй знак зодиака, планета Венера.',
+        'date_from': '2000-04-21',
+        'date_to': '2000-05-21',
+        'element': 'eath',
+    },
+        {
+        'name': 'Близнецы',
+        'code': 'gemini',
+        'desc': 'Третий знак зодиака, планета Меркурий.',
+        'date_from': '2000-05-22',
+        'date_to': '2000-06-21',
+        'element': 'air',
+    },
+    {
+        'name': 'Рак',
+        'code': 'cancer',
+        'desc': 'Четвёртый знак зодиака, Луна.',
+        'date_from': '2000-06-22',
+        'date_to': '2000-07-22',
+        'element': 'wather',
+    },
+        {
+        'name': 'Лев',
+        'code': 'leo',
+        'desc': 'Пятый знак зодиака, Солнце.',
+        'date_from': '2000-07-23',
+        'date_to': '2000-08-21',
+        'element': 'fire',
+    },
+    {
+        'name': 'Дева',
+        'code': 'virgo',
+        'desc': 'Шестой знак зодиака, планета Меркурий.',
+        'date_from': '2000-08-22',
+        'date_to': '2000-09-24',
+        'element': 'eath',
+    },
+            {
+        'name': 'Весы',
+        'code': 'libra',
+        'desc': 'Седьмой знак зодиака, планета Венера.',
+        'date_from': '2000-09-25',
+        'date_to': '2000-10-23',
+        'element': 'air',
+    },
+    {
+        'name': 'Скорпион',
+        'code': 'scorpio',
+        'desc': 'Восьмой знак зодиака, планета Марс.',
+        'date_from': '2000-10-24',
+        'date_to': '2000-11-22',
+        'element': 'wather',
+    },
+        {
+        'name': 'Стрелец',
+        'code': 'sagittarius',
+        'desc': 'Девятый знак зодиака, планета Юпитер.',
+        'date_from': '2000-11-23',
+        'date_to': '2000-12-22',
+        'element': 'fire',
+    },
+    {
+        'name': 'Козерог',
+        'code': 'capricorn',
+        'desc': 'Десятый знак зодиака, планета Сатурн.',
+        'date_from': '2000-12-23',
+        'date_to': '2000-01-20',
+        'element': 'eath',
+    },
+    {
+        'name': 'Водолей',
+        'code': 'aquarius',
+        'desc': 'Одиннадцатый знак зодиака, планеты Уран и Сатурн.',
+        'date_from': '2000-01-21',
+        'date_to': '2000-02-19',
+        'element': 'air',
+    },
+    {
+        'name': 'Рыбы',
+        'code': 'pisces',
+        'desc': 'Двенадцатый знак зодиака, планеты Юпитер.',
+        'date_from': '2000-02-20',
+        'date_to': '2000-03-20',
+        'element': 'wather',
+    },   
+]
+
+
+for k, v in zodiac_json.items():
+логирование
+
+/elements - Все элементы
+/elements/eath - Все знаки зодиака этого элемента
+1. создать модель Elements
+2. связать ее с моделью Зодиаки
+3. по /elements переходить на страницу
+4. выводить из бд элементы
+
+как автоматически заполняить связанные таблицы поле elements_id
+
+
+
+огонь 1 
+вода 2
+земля 3
+воздух 4
