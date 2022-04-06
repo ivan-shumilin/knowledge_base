@@ -20,6 +20,13 @@ CRUD - создание, чтение, обравление, удаление.
     |         'rest_framework.parsers.JSONParser',
     |     ],
     |    }
+Ограничения доступа (permissions) .
+  Документация .
+  . https://www.django-rest-framework.org/api-guide/permissions/
+. `AllowAny` – полный доступ;
+. `IsAuthenticated` – только для авторизованных пользователей;
+. `IsAdminUser` – только для администраторов;
+. `IsAuthenticatedOrReadOnly` – только для авторизованных или всем, но для чтения.
 Аутентификация и авторизация .
   Аутентификация на основе сессий и cookies .
   . https://www.youtube.com/watch?v=8fKmAMLQGN8
@@ -30,4 +37,4 @@ CRUD - создание, чтение, обравление, удаление.
   Аутентификация по токенам. Пакет Djoser .
   . https://www.youtube.com/watch?v=8_wR-PIsS2c
 
-  
+
