@@ -1,4 +1,4 @@
-. Pro Git - manual [https://git-scm.git com/book/ru/v2] 
+. Pro Git - manual [https://git-scm.com/book/ru/v2] 
 
 Установка .
 . Установка git Ubuntu.
