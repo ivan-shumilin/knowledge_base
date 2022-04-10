@@ -7,4 +7,5 @@ https://www.youtube.com/watch?v=EF9UNlB05Rk&list=PL6plRXMq5RADYaw4Xo111smBcEPNMh
 pip install bs4
 pip install requests
 pip3 install fake-useragent
+pip3 install 
 
