@@ -8,6 +8,14 @@ Coverage .
 | coverage run --source='.' ./manage.py test . 
 | coverage report
 | coverage html # отображает в html
+Получить подробную информация о тесте .
+| python3 manage.py test --verbosity 2
+Запустить тест в конкретной дирории .
+| python3 manage.py test catalog.tests.test_forms
+Запустить конкретной тест .
+|  python3 manage.py test catalog.tests.test_forms.FindCarsFormTest
+
+
 
 
 
