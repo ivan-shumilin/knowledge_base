@@ -1,4 +1,6 @@
-. Pro Git - manual [https://git-scm.com/book/ru/v2] 
+. Pro Git - manual [https://git-scm.com/book/ru/v2]
+Видео в котором показано все что нужно делать в git .
+. https://www.youtube.com/watch?v=_AOr2RqvYB4 
 
 Установка .
 . Установка git Ubuntu.
