@@ -9,3 +9,6 @@ pip install requests
 pip3 install fake-useragent
 pip3 install 
 
+Статья о правовых аспектах парснга
+https://habr.com/ru/post/545818/
+
